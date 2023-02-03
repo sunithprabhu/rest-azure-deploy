@@ -119,7 +119,7 @@ public class ProjectRestController {
 		
 		System.out.println("personName : " + personName);
 		
-		var client = new RazorpayClient(SECRET_ID, SECRET_KEY);
+		RazorpayClient client = new RazorpayClient(SECRET_ID, SECRET_KEY); //added Object <=> var
 		
 			 JSONObject object = new JSONObject();
 			 object.put("amount", amt);
